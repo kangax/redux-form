@@ -118,11 +118,14 @@ declare export var formPropTypes: Object
 
 declare export var FormName: React.ComponentType<FormNameProps>
 
-declare export var Field: React.ComponentType<FieldInputProps>
+declare export var Field: React.ComponentType<{ ...FieldInputProps, ... }>
 
-declare export var Fields: React.ComponentType<FieldsInputProps>
+declare export var Fields: React.ComponentType<{ ...FieldsInputProps, ... }>
 
-declare export var FieldArray: React.ComponentType<FieldArrayInputProps>
+declare export var FieldArray: React.ComponentType<{
+  ...FieldArrayInputProps,
+  ...
+}>
 
 declare export var Form: React.ComponentType<FormProps>
 
